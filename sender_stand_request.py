@@ -5,7 +5,7 @@ import data
 def create_new_user(body):
     return requests.post(configuration.URL_SERVICE + configuration.CREATE_USER_PATH,
                          json=body,
-                         headers=data.headers.copy)
+                         headers=(data.headers.copy()))
 
 
 def auth_token_return():
