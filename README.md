@@ -1,4 +1,4 @@
-Project for the Seventh Sprint (Urban Grocers App) By Daniel Osorio, Group 35.
+Project for the eight Sprint (Urban Grocers App) By Daniel Osorio, Group 35.
 
 Another QA Engineer working with you is checking how the Urban Grocers app creates product kits. Several checklists have been created, one of which is for the name field in the product kit creation request.
 
@@ -70,7 +70,7 @@ The parameter is not included in the request: kit_body = { } Response code: 400.
 
 A different parameter type is passed (number): kit_body = { "name": 123 } Response code: 400.
 
-Proyecto para el séptimo sprint (Urban Grocers app) Por Daniel Osorio grupo 35.
+Proyecto para el octavo sprint (Urban Grocers app) Por Daniel Osorio grupo 35.
 
 Otro QA Engineer que trabaja contigo está comprobando cómo la aplicación Urban Grocers crea kits de productos. Se han creado varias listas de comprobación, una de ellas es para el campo name en la solicitud de creación de un kit de productos.
 
