@@ -146,4 +146,4 @@ Se permiten números: kit_body = { "name": "123" } Código de respuesta: 201 El 
 
 El parámetro no se pasa en la solicitud: kit_body = { } Código de respuesta: 400
 
-Se ha pasado un tipo de parámetro diferente (número): kit_body = { "name": 123 } Código de respuesta: 400
+Se ha pasado un tipo de parámetro diferente (número): kit_body = { "name": 123 } Código de respuesta: 400.
