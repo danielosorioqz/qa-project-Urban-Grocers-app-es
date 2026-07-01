@@ -1,4 +1,4 @@
-# Project for the eight Sprint (Urban Grocers App) By Daniel Osorio, Group 35.
+# Project for the Eight Sprint (Urban Grocers App) By Daniel Osorio, Group 35.
 
 Another QA Engineer working with you is checking how the Urban Grocers app creates product kits. Several checklists have been created, one of which is for the name field in the product kit creation request.
 
