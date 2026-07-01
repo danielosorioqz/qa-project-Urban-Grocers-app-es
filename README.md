@@ -1,10 +1,10 @@
-Project for the eight Sprint (Urban Grocers App) By Daniel Osorio, Group 35.
+# Project for the eight Sprint (Urban Grocers App) By Daniel Osorio, Group 35.
 
 Another QA Engineer working with you is checking how the Urban Grocers app creates product kits. Several checklists have been created, one of which is for the name field in the product kit creation request.
 
 Your task is to automate the tests from this checklist, upload the code to GitHub, and submit the repository for review.
 
-Steps to Execute the Tests
+## Steps to Execute the Tests
 Setup
 
 Installing Pytest and Requests Libraries There are two methods to install Pytest and Requests. Choose the one that’s most convenient for you.
@@ -19,7 +19,7 @@ Open the terminal or console. Enter the command pip install pytest. Enter the co
 
 In your PyCharm project, go to the bottom panel and select the "Python Packages" tab. In the search field, enter "Pytest." Locate and select the "Pytest" package from the list and click the "Install" button. Do the same for "Requests."
 
-Running Tests
+# **Running Tests**
 You have two options for running your tests: directly from PyCharm's console or using its graphical interface.
 
 1️⃣ From the PyCharm terminal
@@ -52,34 +52,34 @@ Send a request to create a new user and remember the authentication token (authT
 
 Test Checklist
 
-Allowed number of characters (1): kit_body = { "name": "a" } Response code: 201. The "name" field in the response body matches the "name" field in the request body.
+1.  Allowed number of characters (1): kit_body = { "name": "a" } Response code: 201. The "name" field in the response body matches the "name" field in the request body.
 
-Allowed number of characters (511): kit_body = { "name": "The test value for this check will be under the limit" } Response code: 201. The "name" field in the response body matches the "name" field in the request body.
+2.  Allowed number of characters (511): kit_body = { "name": "The test value for this check will be under the limit" } Response code: 201. The "name" field in the response body matches the "name" field in the request body.
 
-Number of characters is less than the allowed amount (0): kit_body = { "name": "" } Response code: 400.
+3.  Number of characters is less than the allowed amount (0): kit_body = { "name": "" } Response code: 400.
 
-Number of characters exceeds the allowed amount (512): kit_body = { "name": "The test value for this check exceeds the limit" } Response code: 400.
+4.  Number of characters exceeds the allowed amount (512): kit_body = { "name": "The test value for this check exceeds the limit" } Response code: 400.
 
-Special characters are allowed: kit_body = { "name": "№%@," } Response code: 201. The "name" field in the response body matches the "name" field in the request body.
+5.  Special characters are allowed: kit_body = { "name": "№%@," } Response code: 201. The "name" field in the response body matches the "name" field in the request body.
 
-Spaces are allowed: kit_body = { "name": " A Aaa " } Response code: 201. The "name" field in the response body matches the "name" field in the request body.
+6.  Spaces are allowed: kit_body = { "name": " A Aaa " } Response code: 201. The "name" field in the response body matches the "name" field in the request body.
 
-Numbers are allowed: kit_body = { "name": "123" } Response code: 201. The "name" field in the response body matches the "name" field in the request body.
+7.  Numbers are allowed: kit_body = { "name": "123" } Response code: 201. The "name" field in the response body matches the "name" field in the request body.
 
-The parameter is not included in the request: kit_body = { } Response code: 400.
+8.  The parameter is not included in the request: kit_body = { } Response code: 400.
 
-A different parameter type is passed (number): kit_body = { "name": 123 } Response code: 400.
+9.  A different parameter type is passed (number): kit_body = { "name": 123 } Response code: 400.
 
-Proyecto para el octavo sprint (Urban Grocers app) Por Daniel Osorio grupo 35.
+# Proyecto para el octavo sprint (Urban Grocers app) Por Daniel Osorio grupo 35.
 
 Otro QA Engineer que trabaja contigo está comprobando cómo la aplicación Urban Grocers crea kits de productos. Se han creado varias listas de comprobación, una de ellas es para el campo name en la solicitud de creación de un kit de productos.
 
 Tu tarea es automatizar las pruebas desde esta lista de comprobación, cargar el código en GitHub y enviar el repositorio a revisión
 
-Pasos para ejecutar las pruebas
+## Pasos para ejecutar las pruebas
 Configuración
 
-Instalando Librerias Pytest y Requests
+## **Instalando Librerias Pytest y Requests**
 Existen dos métodos para instalar Pytest y Requests. Elige el que te resulte más conveniente.
 
 1️⃣ Usando el comando "pip" en la terminal:
@@ -92,7 +92,7 @@ Abre la terminal o consola. Ingresa el comando pip install pytest. Ingresa el co
 
 En tu proyecto de PyCharm, dirígete al panel inferior y selecciona la pestaña "Python Packages". En el campo de búsqueda, introduce "Pytest". Localiza y selecciona el paquete "Pytest" de la lista y haz clic en el botón "Install". Haz lo mismo con "Requests"
 
-Ejecución de pruebas
+# **Ejecución de pruebas**
 Tienes dos opciones para ejecutar tus pruebas: directamente desde la consola de PyCharm o utilizando su interfaz gráfica.
 
 1️⃣ Desde la terminal de PyCharm
@@ -114,6 +114,7 @@ Ve a GitHub y clona el nuevo repositorio en tu computadora local, siguiendo esto
 Abre la línea de comandos en tu computadora.
 Si aún no lo has hecho, crea un directorio para almacenar todos tus proyectos.
 Clona el repositorio con SSH.
+
 Paso 3. Trabaja con el proyecto de forma local Ahora tienes una copia local del proyecto y puedes abrir la carpeta del proyecto en tu computadora.
 
 Presiona el botón "Iniciar el servidor" para obtener la URL de tu servidor.
@@ -130,20 +131,20 @@ Envía una solicitud para crear un nuevo usuario o usuaria y recuerda el token d
 
 Lista de comprobación de pruebas
 
-El número permitido de caracteres (1): kit_body = { "name": "a"} Código de respuesta: 201 El campo "name" del cuerpo de la respuesta coincide con el campo "name" del cuerpo de la solicitud
+1.  El número permitido de caracteres (1): kit_body = { "name": "a"} Código de respuesta: 201 El campo "name" del cuerpo de la respuesta coincide con el campo "name" del cuerpo de la solicitud
 
-El número permitido de caracteres (511): kit_body = { "name":"El valor de prueba para esta comprobación será inferior a"} Código de respuesta: 201 El campo "name" en el cuerpo de la respuesta coincide con el campo "name" en el cuerpo de la solicitud
+2.  El número permitido de caracteres (511): kit_body = { "name":"El valor de prueba para esta comprobación será inferior a"} Código de respuesta: 201 El campo "name" en el cuerpo de la respuesta coincide con el campo "name" en el cuerpo de la solicitud
 
-El número de caracteres es menor que la cantidad permitida (0): kit_body = { "name": "" } Código de respuesta: 400
+3.  El número de caracteres es menor que la cantidad permitida (0): kit_body = { "name": "" } Código de respuesta: 400
 
-El número de caracteres es mayor que la cantidad permitida (512): kit_body = { "name":"El valor de prueba para esta comprobación será inferior a” } Código de respuesta: 400
+4.  El número de caracteres es mayor que la cantidad permitida (512): kit_body = { "name":"El valor de prueba para esta comprobación será inferior a” } Código de respuesta: 400
 
-Se permiten caracteres especiales: kit_body = { "name": ""№%@"," } Código de respuesta: 201 El campo "name" del cuerpo de la respuesta coincide con el campo "name" del cuerpo de la solicitud
+5.  Se permiten caracteres especiales: kit_body = { "name": ""№%@"," } Código de respuesta: 201 El campo "name" del cuerpo de la respuesta coincide con el campo "name" del cuerpo de la solicitud
 
-Se permiten espacios: kit_body = { "name": " A Aaa " } Código de respuesta: 201 El campo "name" del cuerpo de la respuesta coincide con el campo "name" del cuerpo de la solicitud
+5.  Se permiten espacios: kit_body = { "name": " A Aaa " } Código de respuesta: 201 El campo "name" del cuerpo de la respuesta coincide con el campo "name" del cuerpo de la solicitud
 
-Se permiten números: kit_body = { "name": "123" } Código de respuesta: 201 El campo "name" del cuerpo de la respuesta coincide con el campo "name" del cuerpo de la solicitud
+7.  Se permiten números: kit_body = { "name": "123" } Código de respuesta: 201 El campo "name" del cuerpo de la respuesta coincide con el campo "name" del cuerpo de la solicitud
 
-El parámetro no se pasa en la solicitud: kit_body = { } Código de respuesta: 400
+8.  El parámetro no se pasa en la solicitud: kit_body = { } Código de respuesta: 400
 
-Se ha pasado un tipo de parámetro diferente (número): kit_body = { "name": 123 } Código de respuesta: 400.
+9.  Se ha pasado un tipo de parámetro diferente (número): kit_body = { "name": 123 } Código de respuesta: 400.
